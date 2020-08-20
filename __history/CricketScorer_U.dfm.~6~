@@ -1,0 +1,395 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 541
+  ClientWidth = 849
+  Color = clYellow
+  Constraints.MinHeight = 580
+  Constraints.MinWidth = 765
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnActivate = FormActivate
+  DesignSize = (
+    849
+    541)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlSplashScreen: TPanel
+    AlignWithMargins = True
+    Left = 6
+    Top = 6
+    Width = 837
+    Height = 529
+    Margins.Left = 6
+    Margins.Top = 6
+    Margins.Right = 6
+    Margins.Bottom = 6
+    Align = alClient
+    Color = clGreen
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clYellow
+    Font.Height = -96
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 2
+    Visible = False
+    ExplicitLeft = 3
+    ExplicitTop = 8
+    ExplicitWidth = 843
+    ExplicitHeight = 530
+  end
+  object Panel1: TPanel
+    Left = 8
+    Top = 199
+    Width = 519
+    Height = 334
+    Align = alCustom
+    Anchors = [akLeft, akRight, akBottom]
+    Color = clGreen
+    ParentBackground = False
+    TabOrder = 0
+    object lblHeading1: TLabel
+      Left = 24
+      Top = 24
+      Width = 217
+      Height = 30
+      Caption = 'CURRENT BATSMAN'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clYellow
+      Font.Height = -21
+      Font.Name = 'Comic Sans MS'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblHeading2: TLabel
+      Left = 24
+      Top = 224
+      Width = 225
+      Height = 30
+      Caption = 'PREVIOUS BATSMEN'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clYellow
+      Font.Height = -21
+      Font.Name = 'Comic Sans MS'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblCurrentPlayer: TLabel
+      Left = 24
+      Top = 60
+      Width = 8
+      Height = 38
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clLime
+      Font.Height = -27
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 178
+      Top = 135
+      Width = 67
+      Height = 23
+      Align = alCustom
+      Caption = 'Run rate'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clYellow
+      Font.Height = -16
+      Font.Name = 'Comic Sans MS'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 309
+      Top = 135
+      Width = 42
+      Height = 23
+      Align = alCustom
+      Caption = 'Fours'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clYellow
+      Font.Height = -16
+      Font.Name = 'Comic Sans MS'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 440
+      Top = 135
+      Width = 41
+      Height = 23
+      Align = alCustom
+      Caption = 'Sixes'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clYellow
+      Font.Height = -16
+      Font.Name = 'Comic Sans MS'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblRunRate: TLabel
+      Left = 165
+      Top = 176
+      Width = 100
+      Height = 23
+      Align = alCustom
+      Alignment = taCenter
+      AutoSize = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clLime
+      Font.Height = -16
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblFours: TLabel
+      Left = 280
+      Top = 176
+      Width = 100
+      Height = 23
+      Align = alCustom
+      Alignment = taCenter
+      AutoSize = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clLime
+      Font.Height = -16
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblSixes: TLabel
+      Left = 413
+      Top = 176
+      Width = 100
+      Height = 23
+      Align = alCustom
+      Alignment = taCenter
+      AutoSize = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clLime
+      Font.Height = -16
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 48
+      Top = 135
+      Width = 44
+      Height = 23
+      Align = alCustom
+      Caption = 'Score'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clYellow
+      Font.Height = -16
+      Font.Name = 'Comic Sans MS'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblScore: TLabel
+      Left = 19
+      Top = 176
+      Width = 100
+      Height = 23
+      Align = alCustom
+      Alignment = taCenter
+      AutoSize = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clLime
+      Font.Height = -16
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+    end
+    object RichEdit1: TRichEdit
+      Left = 24
+      Top = 260
+      Width = 477
+      Height = 180
+      Align = alCustom
+      Anchors = [akLeft, akTop, akRight]
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      BorderStyle = bsNone
+      Color = clGreen
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clLime
+      Font.Height = -16
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 533
+    Top = 7
+    Width = 310
+    Height = 526
+    Align = alCustom
+    Anchors = [akTop, akRight, akBottom]
+    Color = clGreen
+    ParentBackground = False
+    TabOrder = 1
+    DesignSize = (
+      310
+      526)
+    object btnDot: TButton
+      Left = 13
+      Top = 69
+      Width = 284
+      Height = 45
+      Margins.Bottom = 10
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'Dot'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnClick = btnDotClick
+    end
+    object btnOne: TButton
+      Left = 13
+      Top = 127
+      Width = 284
+      Height = 45
+      Margins.Bottom = 10
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'One'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = btnOneClick
+    end
+    object btnSix: TButton
+      Left = 13
+      Top = 301
+      Width = 284
+      Height = 45
+      Margins.Bottom = 10
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'Six'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnClick = btnSixClick
+    end
+    object btnTwo: TButton
+      Left = 13
+      Top = 185
+      Width = 284
+      Height = 45
+      Margins.Bottom = 10
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'Two'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      OnClick = btnTwoClick
+    end
+    object btnFour: TButton
+      Left = 13
+      Top = 243
+      Width = 284
+      Height = 45
+      Margins.Bottom = 10
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'Four'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+      OnClick = btnFourClick
+    end
+    object btnOut: TButton
+      Left = 13
+      Top = 359
+      Width = 284
+      Height = 45
+      Margins.Bottom = 10
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'Out'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
+      OnClick = btnOutClick
+    end
+    object btnWide: TButton
+      Left = 14
+      Top = 417
+      Width = 135
+      Height = 45
+      Margins.Right = 5
+      Margins.Bottom = 10
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'W i d e'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+      OnClick = btnWideClick
+    end
+    object btnUndo: TButton
+      Left = 159
+      Top = 417
+      Width = 136
+      Height = 45
+      Margins.Left = 5
+      Margins.Bottom = 10
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'Undo'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Comic Sans MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
+    end
+  end
+  object Panel3: TPanel
+    Left = 8
+    Top = 8
+    Width = 519
+    Height = 185
+    Anchors = [akLeft, akTop, akRight]
+    Caption = 'Panel3'
+    Color = clGreen
+    ParentBackground = False
+    TabOrder = 3
+  end
+end
